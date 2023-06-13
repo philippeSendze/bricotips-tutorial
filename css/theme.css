@@ -57,3 +57,101 @@ li.menu-item.current-menu-item a {
   color: #6d6d6d;
   background-color: #c8d6cf !important;
 }
+
+/* À PROPOS */
+
+#apropos h1 {
+  text-align: center;
+  font-size: 40px;
+}
+#apropos > section {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+#apropos > section h2 {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 30px;
+}
+#apropos > section .image {
+  width: 300px;
+  padding: 0 15px;
+}
+#apropos > section .image img {
+  width: 100%;
+}
+#apropos > section .text {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  #apropos > section > * {
+    width: 100%;
+    flex: initial !important;
+  }
+  #apropos > section .image {
+    order: 2;
+  }
+}
+
+/* LEXIQUE */
+
+#lexique h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#lexique > section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#lexique .mot {
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin: 0 20px 20px 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#lexique .mot .down {
+  display: inline-block;
+}
+
+#lexique .mot .up {
+  display: none;
+}
+
+#lexique .mot.open .down {
+  display: none;
+}
+
+#lexique .mot.open .up {
+  display: inline-block;
+}
+
+#lexique .mot .titre {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #c8d6cf;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#lexique .mot .definition {
+  padding: 10px 20px;
+  display: none;
+}
+
+#lexique .mot.open .definition {
+  padding: 10px 20px;
+  display: block;
+  background: #f4ca52;
+}
