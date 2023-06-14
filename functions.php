@@ -33,7 +33,7 @@ function theme_enqueue_styles()
     );
 }
 
-/* CHARGEMENT DES WIDGETS */
+/* WIDGETS */
 
 // On crée une class Widget Image_Titre_Widget dans un fichier à part pour pas surcharger le functions.php
 require_once(__DIR__ . '/widgets/ImageTitreWidget.php');
@@ -48,6 +48,8 @@ function register_widgets()
 }
 //On demande à wordpress de charger des widget selon la fonction register_widgets()
 add_action('widgets_init', 'register_widgets');
+
+
 
 /* SHORTCODES */
 
